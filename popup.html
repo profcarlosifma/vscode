@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUP</title>
+</head>
+
+<body>
+    <h3 style="text-align: center;">Calculando a Média entre três valores no JavaScript e vendo a situação Final</h3>
+    <br>
+    <h4>Insira os valores soliciados</h4>
+    <p>Digite a Primeira Nota: <input id="nota1" type="number"> <br /> </p>
+    <p>Digite a Segunda Nota: <input id="nota2" type="number"> <br /> </p>
+    <p>Digite a Terceira Nota: <input id="nota3" type="number"> <br /> </p>
+    <button onclick="media()">Calcular Média</button>
+
+    <h4 id="soma">SOMA TOTAL</h4>
+    <h4 id="media">MÉDIA DOS VALORES</h4>
+    <script>
+        function media() {
+            var nota1 = parseFloat(document.getElementById("nota1").value);
+            var nota2 = parseFloat(document.getElementById("nota2").value);
+            var nota3 = parseFloat(document.getElementById("nota3").value);
+            var soma = (nota1 + nota2 + nota3);
+            var media = (nota1 + nota2 + nota3) / 3;
+            document.getElementById("soma").innerHTML = ("A soma total é: " + soma);
+            document.getElementById("media").innerHTML = ("A MÉDIA é: " + media);
+        }
+    </script>
+</body>
+
+</html>

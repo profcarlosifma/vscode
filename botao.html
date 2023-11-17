@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionamento de um botão</title>
+</head>
+
+<body>
+    <h1>Primeira Interação no JavaScript</h1>
+    <!--Criando Eventos em HTML-->
+    <button onclick="abrir('popup.html')">Abrir</button>
+
+    <script>
+        function abrir(URL) {
+            window.open(URL, 'janela', 'width=400, height=500, top=100, left=699, scrollbars=no, status=no, toolbar=no, location=no, menubar=no, resizable=no, fullscreen=no');
+        }
+    </script>
+</body>
+
+</html>
